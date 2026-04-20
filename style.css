@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* common */
+body {
+  margin: 0;
+  background: rgba(235, 247, 248, 0.4)
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* header */
+header {
+  padding: 44px 8px 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+header img {
+  width: 160px;
+  height: auto;
+}
+
+
+
+/* hero */
+.hero {
+  padding: 0px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+}
+
+/* index */
+
+.index {
+  background: white;
+  padding: 32px 30px 32px 24px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.index2 {
+  width: 560px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.index h2 {
+  padding: 0 0 10px 20px;
+}
+
+ol {
+  margin: 0;
+  padding-left: 40px;
+}
+
+li {
+  font-size: 14px;
+}
+
+li + li {
+  padding-top: 18px;
+}
+
+/* detail */
+.detail {
+  padding: 64px 40px 0; 
+}
+
+.detail > h2 {
+  margin-bottom: 8px;
+}
+
+.detail dl {
+  border-bottom: 1px solid #ddd;
+}
+
+.explanation h2 {
+  border-bottom: 1px solid #ddd;
+  padding: 24px 0;
+}
+
+dl {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0;
+  font-size: 14px;
+}
+
+dt {
+  width: 100px;
+}
+
+dd {
+  width: calc(100% - 100px);
+  margin: 0;
+}
+
+.detail img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.explanation p {
+  font-size: 14px;
+  margin: 24px 0 20px;
+}
+
+.explanation a {
+  font-size: 14px;
+  color: inherit;
+}
+
+/* footer */
+footer {
+  margin: 100px 0 14px 40px;
+}
+
+small {
+  font-size: 10px;
+}
+
+
+
+@media (min-width: 550px) {
+
+  /* DETAIL */
+  .detail {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+}
+
+
+@media (min-width: 1025px) {
+
+  /* DETAIL */
+  .detail {
+    max-width: 680px;
+  }
+
+  .detail2 {
+    display: flex;
+    gap: 64px;
+    justify-content: space-between;
+  }
+
+  dt {
+    width: 80px;
+  }
+
+  dd {
+    width: calc(100% - 80px);
+    margin: 0;
+  }
+
+  .img {
+    width: 270px;
+    height: auto;
+  }
+  
+  .explanation {
+    width: 270px;
+  }
+
+  .explanation h2 {
+    padding: 0 0 20px;
+  }
+
+  .explanation p {
+    margin: 25px 0 20px;
+  }
+  .img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display:block;
+  }
+
+  /* footer */
+  footer {
+    width: 600px;
+    margin: 100px auto 0;
+  }
+}
+
